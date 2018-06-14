@@ -89,7 +89,7 @@
 
 ## 交易模拟与交易验证 示例
 
-本节通过示例场景帮助理解read-write set。存在一个key设为`k`，在worldState中由元组`(k,var,val)`表示，其中`ver`是`k`的最新的version，`val`是`k`的value。
+本节通过示例场景帮助理解read-write set。存在一个key设为`k`，在worldState中由元组`(k,ver,val)`表示，其中`ver`是`k`的最新的version，`val`是`k`的value。
 
 现在有五个交易，分别是`T1,T2,T3,T4,T5`，这五个交易的模拟过程是针对相同的worldSate快照，下面的代码片段显示了模拟交易的worldState快照以及每个交易执行读写的顺序。
 
